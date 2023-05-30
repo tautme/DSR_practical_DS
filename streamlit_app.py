@@ -65,7 +65,7 @@ if __name__ == "__main__":
 
     partner_input = st.selectbox(
         "Is customer partnered?", 
-        ['No', 'Yes'])
+        ['Yes', 'No'])
     partner = 1 if partner_input == 'Yes' else 0
     partner = partner_input
 
