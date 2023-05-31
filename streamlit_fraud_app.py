@@ -250,8 +250,16 @@ if st.button("Predict Fraud"):
     prediction_string = "Fraud" if prediction == 1 else "Not Fraud"
     st.text(f"Prediction: {prediction_string}")
 
+## create horizontal line here
+import time
+with st.spinner("Processing..."):
+    time.sleep(3)
+st.success("Done!")
 
 data = pd.read_csv('./data/transaction_dataset.csv', index_col=0)
 st.write("Etherium Transaction Data Used in Training: FLAG = 1 is Fraud")
+
+
 st.dataframe(data)
 st.write("Search for a transaction by hash address here: https://etherscan.io/")
+st.write("Dataset from here: https://www.kaggle.com/datasets/vagifa/ethereum-frauddetection-dataset")
