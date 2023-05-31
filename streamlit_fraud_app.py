@@ -126,92 +126,92 @@ if __name__ == "__main__":
     st.title("Transaction fraud prediction")
 
     ambst = st.slider(
-        "What is the average time between sent transactions?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        "What is the average time between sent transactions? (minutes)",
+        min_value=1.0, max_value=4000.0, value=5.0, step=1.0)
     
     ambrt = st.slider(
-        "What is the average time between received transactions?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        "What is the average time between received transactions? (minutes)",
+        min_value=1.0, max_value=4800.0, value=5.0, step=1.0)
     
     tdbfl = st.slider(
-        "What is the time difference between first and last transactions?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        "What is the time difference between first and last transactions? (minutes)",
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     sentt = st.slider(
         "How many transactions has the customer sent?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     rect = st.slider(
         "How many transactions has the customer received?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     ncc = st.slider(
         "How many contracts has the customer created?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     urfa = st.slider(
         "How many unique addresses has the customer received from?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     usta = st.slider(
         "How many unique addresses has the customer sent to?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     minvr = st.slider(
         "What is the minimum value received?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     maxvr = st.slider(
         "What is the maximum value received?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     avgvr = st.slider(
         "What is the average value received?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     minvs = st.slider(
         "What is the minimum value sent?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     maxvs = st.slider(
         "What is the maximum value sent?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     avgvs = st.slider(
         "What is the average value sent?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     minvsc = st.slider(
         "What is the minimum value sent to contract?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0) 
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0) 
     
     maxvsc = st.slider(
         "What is the maximum value sent to contract?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     avgvsc = st.slider(
         "What is the average value sent to contract?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     ttc = st.slider(
         "What is the total number of transactions?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
 
     ter = st.slider(
         "What is the total ether received?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     tes = st.slider(
         "What is the total ether sent?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     tesc = st.slider(
         "What is the total ether sent to contracts?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=100.0, value=5.0, step=1.0)
     
     teb = st.slider(
         "What is the total ether balance?",
-        min_value=1.0, max_value=100000.0, value=5.0, step=1.0)
+        min_value=1.0, max_value=1000.0, value=5.0, step=1.0)
     
 transaction_dict = {
     'Avg min between sent tnx': ambst, 
