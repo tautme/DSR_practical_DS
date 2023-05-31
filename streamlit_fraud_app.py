@@ -249,3 +249,9 @@ if st.button("Predict Fraud"):
     prediction = make_predictions(customer_data)[0]
     prediction_string = "Fraud" if prediction == 1 else "Not Fraud"
     st.text(f"Prediction: {prediction_string}")
+
+
+data = pd.read_csv('./data/transaction_dataset.csv', index_col=0)
+st.write("Etherium Transaction Data Used in Training: FLAG = 1 is Fraud")
+st.dataframe(data)
+st.write("Search for a transaction by hash address here: https://etherscan.io/")
